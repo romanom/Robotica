@@ -19,4 +19,10 @@ $(document).ready(function() {
 		$('h1').css('color','#222222');
 	}, 3000);
 	
+
+	$('.mdl-navigation__link').click(function(){
+		var newActiveID = $(this).data('href');
+		$('.mdl-layout__tab.is-active, .mdl-layout__tab-panel.is-active').removeClass('is-active');
+		$(newActiveID + ', .mdl-layout__tab[href=' + newActiveID + ']').addClass('is-active');
+	})
 });

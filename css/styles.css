@@ -6,7 +6,7 @@ html, body {
   padding: 0;
 }
 .demo-card-wide.mdl-card {
-  width: 512px;
+  
 }
 .demo-card-wide > .mdl-card__title {
   color: #fff;
@@ -152,13 +152,15 @@ html, body {
 .demo-card-event > .mdl-card__actions > .mdl-button {
   color: #fff;
 }
-
-
-
-
-
-
-
+.mdl-card{
+  width: auto;
+}
+.mdl-color--gray-nao {
+    background-color: #C3C2C0;
+}
+h4{
+  font-size: 22px;
+}
 
 
 
