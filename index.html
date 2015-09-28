@@ -1,0 +1,501 @@
+<!DOCTYPE html>
+<html>
+<head lang="es">
+	<meta charset="utf-8">
+	<title>Introducción a la Robótica</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="Curso de Introducción a la Robótica de la Facultad de Ingeniería de Sistemas de la Universidad Nacional Tecnológica de Lima Sur, Lima - Perú">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<meta name="msapplication-tap-highlight" content="no">
+    <meta name="msapplication-TileColor" content="#00000">
+    <meta name="msapplication-TileImage" content="images/nao.png">
+    <meta name="theme-color" content="#000000">
+
+    <link rel="apple-touch-icon-precomposed" type="image/x-icon" href="images/icon.png">
+    <link rel="shortcut icon" type="image/x-icon" href="images/icon.png"/>
+
+	<link rel="stylesheet" href="css/main.css">
+	<link rel="stylesheet" href="https://storage.googleapis.com/code.getmdl.io/1.0.4/material.deep_purple-amber.min.css" />
+	<script src="https://storage.googleapis.com/code.getmdl.io/1.0.4/material.min.js"></script>
+	<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+	<link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Roboto:300,400,500,700" type="text/css">
+	<link rel="stylesheet" href="css/styles.css">	
+</head>
+<body class="mdl-demo mdl-color--grey-100 mdl-color-text--grey-700 mdl-base">
+	<div id="content" class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
+	  <header class="mdl-layout__header">
+	    <div class="mdl-layout__header-row">
+	      <!-- Title -->
+	      <span class="mdl-layout-title">Introducción a la Robótica</span>
+	    </div>
+	    <!-- Tabs -->
+	    <div class="mdl-layout__tab-bar mdl-js-ripple-effect">
+	      <a href="#fixed-tab-1" class="mdl-layout__tab is-active">Información General</a>
+	      <a href="#fixed-tab-2" class="mdl-layout__tab">Páginas de ayuda</a>
+	      <a href="#fixed-tab-3" class="mdl-layout__tab">Equipo de trabajo</a>
+	      <a href="#fixed-tab-4" class="mdl-layout__tab">Clases</a>
+	      <a href="#fixed-tab-5" class="mdl-layout__tab">Laboratorios</a>
+	    </div>
+	  </header>
+	  <div class="mdl-layout__drawer">
+		    <span class="mdl-layout-title mdl-color--deep-purple-600 mdl-color-text--white">
+		    Robótica
+		    <img src="images/robot36.png" class="demo-avatar">
+	        </span>
+	        <nav class="mdl-navigation">
+	          <a class="mdl-navigation__link" href="javascript:void(0);" data-href="#fixed-tab-1">Información General</a>
+	          <a class="mdl-navigation__link" href="javascript:void(0);" data-href="#fixed-tab-2">Páginas de ayuda</a>
+	          <a class="mdl-navigation__link" href="javascript:void(0);" data-href="#fixed-tab-3">Equipo de trabajo</a>
+	          <a class="mdl-navigation__link" href="javascript:void(0);" data-href="#fixed-tab-4">Clases</a>
+	          <a class="mdl-navigation__link" href="javascript:void(0);" data-href="#fixed-tab-5">Laboratorios</a>
+	        </nav>
+	  </div>
+	  
+	  <div id="loader-wrapper">
+			<div id="loader"><img src="images/toy13.png" style="padding:5px; height:180px; width:180px; "></div>
+			
+			<div class="loader-section section-left"></div>
+            <div class="loader-section section-right"></div>
+
+	  </div>
+	  
+	  <main class="mdl-layout__content">
+
+	    <section class="mdl-layout__tab-panel is-active fixed-1" id="fixed-tab-1">
+	    	<div class="mdl-grid">
+
+					<div class="mdl-cell mdl-cell--12-col">
+
+						<section class="section--center mdl-grid mdl-grid--no-spacing mdl-shadow--2dp">
+				            <header class="section__play-btn mdl-cell mdl-cell--3-col-desktop mdl-cell--2-col-tablet mdl-cell--4-col-phone mdl-color--gray-nao">
+				            	<img class="" src="images/nao.png" style="max-height: 240px; max-width: 170px; min-width:108px">
+				            </header>
+				            <div class="mdl-card mdl-cell mdl-cell--9-col-desktop mdl-cell--6-col-tablet mdl-cell--4-col-phone">
+				              <div class="mdl-card__supporting-text">
+				                <h4>Curso de Introducción a la Robótica de la Facultad de Ingeniería de Sistemas de la Universidad Nacional Tecnológica de Lima Sur, Lima - Perú.</h4>
+				                
+				              </div>
+				              <div class="mdl-card__actions">
+				                <a id="tt1" target="_blank" href="silabo/silabo.pdf" class="mdl-button">Sílabo</a>
+				              </div>
+				              <div class="mdl-tooltip" for="tt1">
+								PDF
+							  </div>
+				            </div>
+				            <button class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon" id="btn1">
+				              <i class="material-icons">more_vert</i>
+				            </button>
+				            <ul class="mdl-menu mdl-js-menu mdl-menu--bottom-right" for="btn1">
+				              <li class="mdl-menu__item">
+				              <a class="mdl-navigation__link" href="https://www.youtube.com/watch?v=nNbj2G3GmAo">Acerca de NAO ()°.°)</a>
+				              </li>
+				            </ul>
+				        </section>
+
+				        <section class="section--center mdl-grid mdl-grid--no-spacing mdl-shadow--2dp">
+				            <div class="mdl-card mdl-cell mdl-cell--12-col">
+				              <div class="mdl-card__supporting-text mdl-grid mdl-grid--no-spacing">
+				                <h4 class="mdl-cell mdl-cell--12-col">Información general del curso</h4>
+				                <div class="section__text mdl-cell mdl-cell--10-col-desktop mdl-cell--6-col-tablet mdl-cell--3-col-phone">
+				                    <table>
+				                  		<tr>
+											<td><b>Asignatura</b></td>
+											<td>: Introducción a la robótica</td>
+										</tr>
+
+									    <tr>
+									      <td><b>Carácter</b></td>
+									      <td>: Electivo</td>
+									    </tr>
+
+									    <tr>
+									      <td><b>Pre-requisito</b></td>
+									      <td>: Ninguno</td>
+									    </tr>
+
+									    <tr>
+									      <td><b>Créditos</b></td>
+									      <td>: 03</td>
+									    </tr>
+
+									    <tr>
+									      <td><b>Horas Semanales</b></td>
+									      <td>: 02 Teoría / 02 Laboratorio</td>
+									    </tr>
+
+									    <tr>
+									      <td><b>Ciclo Académico</b></td>
+									      <td>: 2015-II</td>
+									    </tr>
+
+									    <tr>
+									      <td><b>Duración</b></td>
+									      <td>: 17 Semanas</td>
+									    </tr>
+
+									    <tr>
+									      <td><b>Profesor</b></td>
+									      <td>: José Ruiz Saavedra</td>
+									    </tr>
+				                  	</table>	    
+				                </div>
+				                
+				              </div>
+				              <div class="mdl-card__actions">
+				                <a href="https://drive.google.com/folderview?id=0B-grhnOqL0dOVldfQkRva1V6X2s&usp=sharing" class="mdl-button">Material de clase</a>
+				              </div>
+				            </div>
+				            
+				          </section>
+				  		
+				    </div>
+				</div>
+
+	    </section>
+
+	    <section class="mdl-layout__tab-panel" id="fixed-tab-2">
+	    	
+	    		<div class="mdl-grid">
+
+					<div class="mdl-cell mdl-cell--4-col">
+
+					      	<div class="demo-card-wide mdl-card mdl-shadow--2dp" style="margin:auto">
+							  <div class="mdl-card__title" style="background: url('images/instructables.png') center / cover;">
+							    <h2 class="mdl-card__title-text">Instructables - "Hágalo usted mismo"</h2>
+							  </div>
+							  <div class="mdl-card__supporting-text">
+							    Instructables brinda un espacio de colaboración para que sus miembros puedan compartir una gran variedad de proyectos con instrucciones paso a paso, acompañadas de ayudas visuales.<br>
+							    Los proyectos abarcan muchas áreas como: <b>alimentos, construcción, salud, hogar, proyectos al aire libre, juegos, tecnología, reparación, muebles, construcción de vehículos, decoración, etc.</b>
+							  </div>
+							  <div class="mdl-card__actions mdl-card--border">
+							    <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect"
+							    	href="http://www.instructables.com/">
+							      Visitar
+							    </a>
+							  </div>
+							</div>
+
+							<br>
+
+							<div class="demo-card-wide mdl-card mdl-shadow--2dp" style="margin:auto">
+							  <div class="mdl-card__title" style="background: url('images/arduino2.jpg') center / cover;">
+							    <h2 class="mdl-card__title-text">Modelos de Arduino</h2>
+							  </div>
+							  <div class="mdl-card__supporting-text">
+							    Arduino es una plataforma de hardware libre, basada en una placa con un microcontrolador y un entorno de desarrollo, diseñada para facilitar el uso de la electrónica en proyectos multidisciplinares. El hardware consiste en una placa con un microcontrolador Atmel AVR y puertos de entrada/salida.
+							  </div>
+							  <div class="mdl-card__actions mdl-card--border">
+							    <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect"
+							    	href="https://www.arduino.cc/en/Main/Products">
+							      Visitar
+							    </a>
+							  </div>
+							</div>
+
+					</div>
+
+					<div class="mdl-cell mdl-cell--4-col">
+						
+					      	<div class="demo-card-wide mdl-card mdl-shadow--2dp" style="margin:auto">
+							  <div class="mdl-card__title" style="background: url('images/libros-arduino.jpg') center / cover;">
+							    <h2 class="mdl-card__title-text">Libros sobre Arduino</h2>
+							  </div>
+							  <div class="mdl-card__supporting-text">
+							    Beginning C for Arduino - Arduino and LEGO Projects - C Programming for Arduino - Arduino Android Blueprints - Python Programming for Arduino - Programming Arduino with LabVIEW - Beginning C for Arduino, 2nd Edition - Arduino Development Cookbook - Arduino - Make: Arduino Bots and Gadgets - Programming Interactivity, 2nd Edition - Arduino Cookbook - Arduino and Kinect Projects - Practical AVR Microcontrollers...
+							  </div>
+							  <div class="mdl-card__actions mdl-card--border">
+							    <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect"
+							    	href="http://it-ebooks.org/search/?q=arduino">
+							      Visitar
+							    </a>
+							  </div>
+							</div>
+
+							<br>
+
+							
+
+					</div>
+
+					<div class="mdl-cell mdl-cell--4-col">
+
+							<div class="demo-card-wide mdl-card mdl-shadow--2dp" style="margin:auto">
+							  <div class="mdl-card__title" style="background: url('images/DC_motor.jpg') center / cover;">
+							    <h2 class="mdl-card__title-text">Algoritmo para manejar "motores dc" en ARDUINO, PIC, etc</h2>
+							  </div>
+							  <div class="mdl-card__supporting-text">
+							    En este post les traigo una manera facil y sencilla de manejar motores dc con tan solo llamar una funcion. Podemos manejar desde un solo  motor hasta el numero de motores que queramos, utilizando   solo un parametro con su respectivo signo, esto para darle el  set duty del pwm, para asi variar su  respectiva velocidad y tambien la direccion.
+							  </div>
+							  <div class="mdl-card__actions mdl-card--border">
+							    <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect"
+							    	href="http://aprendiendofacilelectronica.blogspot.pe/2014/12/algorirmo-para-manejar-motores-dc-en.html">
+							      Visitar
+							    </a>
+							  </div>
+							</div>
+
+					</div>
+				</div>
+
+	    </section>
+
+	    <section class="mdl-layout__tab-panel" id="fixed-tab-3">
+	    	<div class="page-content">
+	    		<div class="mdl-grid">
+		    		<div class="mdl-cell mdl-cell--4-col">
+		    			<div class="demo-card-square mdl-card mdl-shadow--2dp" style="margin:auto">
+						  <div class="mdl-card__title mdl-card--expand" style="background: url('images/fondo_material.png') center / cover;">
+						    <h2 class="mdl-card__title-text mdl-color-text--white" style="margin:auto">
+						   	<img src="images/1.png" class="demo-avatar">
+						    </h2>
+						  </div>
+						  <div class="mdl-card__supporting-text">
+						  	<h4>Proyecto:</h4>
+						  	Integrantes:
+						    <ul>
+						    	<li>Gustavo Seminario Calle</li>
+						    	<li>Ricardo Reyna Reategui</li>
+						    	<li>Diego Huamán Arancibia</li>
+						    </ul>
+						  </div>
+						  <div class="mdl-card__actions mdl-card--border mdl-color-text--grey-">
+						    <a id="tt2" class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect"
+						    href="https://drive.google.com/folderview?id=0B-grhnOqL0dOU1NyNU1rR2N5dkE&usp=sharing">
+						      Documentación
+						    </a>
+						  </div>
+						</div>
+						<div class="mdl-tooltip" for="tt2">
+						  	Ir a Google Drive
+						</div>
+		    		</div>
+
+		    		<div class="mdl-cell mdl-cell--4-col">
+		    			<div class="demo-card-square mdl-card mdl-shadow--2dp" style="margin:auto">
+						  <div class="mdl-card__title mdl-card--expand" style="background: url('images/fondo_material.png') center / cover;">
+						    <h2 class="mdl-card__title-text mdl-color-text--white" style="margin:auto">
+						    	<img src="images/2.png" class="demo-avatar">
+						    </h2>
+						  </div>
+						  <div class="mdl-card__supporting-text">
+						  	<h4>Proyecto:</h4>
+						  	Integrantes:
+						    <ul>
+						    	<li>Reynaldo Cavero Rosales</li>
+						    	<li>Luis Romero Reyes</li>
+						    	<li>Cristian Santos Dávila</li>
+						    	<li>Alexis Minaya Motta</li>
+						    </ul>
+						  </div>
+						  <div class="mdl-card__actions mdl-card--border">
+						    <a id="tt3" class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect"
+						    	href="https://drive.google.com/folderview?id=0B-grhnOqL0dObEtBQ3pLUktCdVk&usp=sharing">
+						      Documentación
+						    </a>
+						  </div>
+						</div>
+						<div class="mdl-tooltip" for="tt3">
+						  	Ir a Google Drive
+						</div>
+		    		</div>
+
+		    		<div class="mdl-cell mdl-cell--4-col">
+		    			<div class="demo-card-square mdl-card mdl-shadow--2dp" style="margin:auto">
+						  <div class="mdl-card__title mdl-card--expand" style="background: url('images/fondo_material.png') center / cover;">
+						    <h2 class="mdl-card__title-text mdl-color-text--white" style="margin:auto">
+						    	<img src="images/3.png" class="demo-avatar">
+						    </h2>
+						  </div>
+						  <div class="mdl-card__supporting-text">
+						  	<h4>Proyecto:</h4>
+						  	Integrantes:
+						    <ul>
+						    	<li>Melanie Romano Mansilla</li>
+						    	<li>Evelyn Soto Machahua</li>
+						    </ul>
+						  </div>
+						  <div class="mdl-card__actions mdl-card--border">
+						    <a id="tt4" class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect"
+						    	href="https://drive.google.com/folderview?id=0B-grhnOqL0dOSEtERjVYb0JDVjg&usp=sharing">
+						      Documentación
+						    </a>
+						  </div>
+						</div>
+						<div class="mdl-tooltip" for="tt4">
+						  	Ir a Google Drive
+						</div>
+		    		</div>
+
+		    		<div class="mdl-cell mdl-cell--4-col">
+		    			<div class="demo-card-square mdl-card mdl-shadow--2dp" style="margin:auto">
+						  <div class="mdl-card__title mdl-card--expand" style="background: url('images/fondo_material.png') center / cover;">
+						    <h2 class="mdl-card__title-text mdl-color-text--white" style="margin:auto">
+						    	<img src="images/4.png" class="demo-avatar">
+						    </h2>
+						  </div>
+						  <div class="mdl-card__supporting-text">
+						  	<h4>Proyecto:</h4>
+						  	Integrantes:
+						    <ul>
+						    	<li>José Cruz Ojeda</li>
+						    	<li>Peter Espinoza Gomez</li>
+						    </ul>
+						  </div>
+						  <div class="mdl-card__actions mdl-card--border">
+						    <a id="tt5" class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect"
+						    	href="https://drive.google.com/folderview?id=0B-grhnOqL0dOOEdjM3NmdXVhaWs&usp=sharing">
+						      Documentación
+						    </a>
+						  </div>
+						</div>
+						<div class="mdl-tooltip" for="tt5">
+						  	Ir a Google Drive
+						</div>
+		    		</div>
+
+		    		<div class="mdl-cell mdl-cell--4-col">
+		    			<div class="demo-card-square mdl-card mdl-shadow--2dp" style="margin:auto">
+						  <div class="mdl-card__title mdl-card--expand" style="background: url('images/fondo_material.png') center / cover;">
+						    <h2 class="mdl-card__title-text mdl-color-text--white" style="margin:auto">
+						    	<img src="images/5.png" class="demo-avatar">
+						    </h2>
+						  </div>
+						  <div class="mdl-card__supporting-text">
+						  	<h4>Proyecto:</h4>
+						  	Integrantes:
+						    <ul>
+						    	<li>Giovani Cuyutupa Canales</li>
+						    </ul>
+						  </div>
+						  <div class="mdl-card__actions mdl-card--border">
+						    <a id="tt6" class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect"
+						    	href="https://drive.google.com/folderview?id=0B-grhnOqL0dOYXllOXpmanNCRVk&usp=sharing">
+						      Documentación
+						    </a>
+						  </div>
+						</div>
+						<div class="mdl-tooltip" for="tt6">
+						  	 Ir a Google Drive
+						</div>
+		    		</div>
+		    	</div>
+	    	</div>
+	    </section>
+
+	    <section class="mdl-layout__tab-panel" id="fixed-tab-4">
+	    	<div class="page-content">
+		    	<div class="mdl-grid">
+
+		    		<div class="mdl-cell mdl-cell--4-col">
+		    			<div class="demo-card-square mdl-card mdl-shadow--2dp" style="margin:auto">
+						  <div class="mdl-card__title mdl-card--expand mdl-color--pink-500">
+						    <h2 class="mdl-card__title-text mdl-color-text--white">
+						    	Clase 1 - 21/09/2015
+						    </h2>
+						  </div>
+						  <div class="mdl-card__supporting-text">
+						  	<h4>Introducción al curso</h4>
+							Repaso de los siguientes puntos:
+							<ol>
+							  <li>Estudio de las cargas</li>
+			                  <li>Tipos de motor y sus partes</li>
+			                  <li>Tipos de programación</li>
+			                  <li>Sistemas de lazo abierto</li>
+			                  <li>Sistemas de lazo cerrado</li>
+			                  <li>Motor paso a paso</li>
+			                  <li>Servomotor</li>
+			                  <li>Microcontrolador de un robot</li>
+							</ol>
+						  </div>
+						  <div class="mdl-card__actions mdl-card--border">
+						    <a id="tt7" href="clases/clase1.html" class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">
+						      Ver más
+						    </a>
+						  </div>
+						</div>
+						<div class="mdl-tooltip" for="tt7">
+						  	WEB
+						</div>
+		    		</div>
+
+		    		<div class="mdl-cell mdl-cell--4-col">
+		    		</div>
+
+		    		<div class="mdl-cell mdl-cell--4-col">
+		    		</div>
+		    	</div>
+	    	</div>
+	    </section>
+
+	    <section class="mdl-layout__tab-panel" id="fixed-tab-5">
+	    	<div class="page-content">
+		    	<div class="mdl-grid">
+
+		    		<div class="mdl-cell mdl-cell--4-col">
+		    			<div class="demo-card-square mdl-card mdl-shadow--2dp" style="margin:auto">
+						  <div class="mdl-card__title mdl-card--expand mdl-color--blue-500">
+						    <h2 class="mdl-card__title-text mdl-color-text--white">
+						    	Laboratorio 1 <br><span style="margin-left:0"></span>
+						    </h2>
+						  </div>
+						  <div class="mdl-card__supporting-text">
+						  	<h4>Materiales</h4>
+							<ul>
+								<li>Protoboard</li>
+								<li>Arduino UNO</li>
+								<li>Servo mínimo</li>
+								<li>Motor DC 3V o 5V o mayor</li>
+								<li>Fuente DC para el motor adicional</li>
+								<li>Driver L293</li>
+								<li>5 Leds (verde o rojo)</li>
+								<li>Resistencias 1/4w (470 ohmios, 1k , 10k)</li>
+								<li>2 potenciometros (5k y 10k) Trimpot color azul</li>
+								<li>Fuente pequeña 5V</li>
+							</ul>
+						  </div>
+						  <div class="mdl-card__actions mdl-card--border">
+						    <a id="tt8" class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">
+						      Ver más
+						    </a>
+						  </div>
+						</div>
+						<div class="mdl-tooltip" for="tt8">
+						  	WEB
+						</div>
+		    		</div>
+
+		    		<div class="mdl-cell mdl-cell--4-col">
+		    		</div>
+
+		    		<div class="mdl-cell mdl-cell--4-col">
+		    		</div>
+		    	</div>
+	    	</div>
+	    </section>
+
+	    <section class="mdl-layout__tab-panel" id="fixed-tab-6">
+	    	<div class="page-content">
+		    	<div class="mdl-grid">
+
+		    		<div class="mdl-cell mdl-cell--4-col">
+		    			
+
+		    		</div>
+
+		    		<div class="mdl-cell mdl-cell--4-col">
+		    		</div>
+
+		    		<div class="mdl-cell mdl-cell--4-col">
+		    		</div>
+		    	</div>
+	    	</div>
+	    </section>
+	  </main>
+	</div>
+
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+	<script src="js/main.js"></script>
+
+</body>
+</html>

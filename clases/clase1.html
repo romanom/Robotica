@@ -1,0 +1,270 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="A front-end template that helps you build fast, modern mobile web apps.">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Clase 1</title>
+
+    <!-- Add to homescreen for Chrome on Android -->
+    <meta name="mobile-web-app-capable" content="yes">
+    <link rel="icon" sizes="192x192" href="images/touch/chrome-touch-icon-192x192.png">
+
+    <!-- Add to homescreen for Safari on iOS -->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="apple-mobile-web-app-title" content="Clase 1">
+
+    <meta name="msapplication-tap-highlight" content="no">
+    <meta name="msapplication-TileColor" content="#00000">
+    <meta name="msapplication-TileImage" content="images/nao.png">
+    <meta name="theme-color" content="#000000">
+
+    <link rel="apple-touch-icon-precomposed" type="image/x-icon" href="../images/icon.png">
+    <link rel="shortcut icon" type="image/x-icon" href="../images/icon.png"/>
+
+    <!-- SEO: If your mobile URL is different from the desktop URL, add a canonical link to the desktop page https://developers.google.com/webmasters/smartphone-sites/feature-phones -->
+    <!--
+    <link rel="canonical" href="http://www.example.com/">
+    -->
+
+    <link href='//fonts.googleapis.com/css?family=Roboto:regular,bold,italic,thin,light,bolditalic,black,medium&amp;lang=en' rel='stylesheet' type='text/css'>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="material.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <style>
+    #view-source {
+      position: fixed;
+      display: block;
+      right: 0;
+      bottom: 0;
+      margin-right: 40px;
+      margin-bottom: 40px;
+      z-index: 900;
+    }
+    </style>
+  </head>
+  <body>
+    <div class="demo-layout mdl-layout mdl-layout--fixed-header mdl-js-layout mdl-color--grey-100">
+      <div class="demo-ribbon mdl-color--deep-purple-500"></div>
+      <main class="demo-main mdl-layout__content">
+        <div class="demo-back">
+            <a class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon" href="../index.html"
+                title="go back" role="button" data-upgraded=",MaterialButton,MaterialRipple" style=" margin-left:20px">
+              <i class="material-icons mdl-color-text--white" role="presentation">arrow_back</i>
+            <span class="mdl-button__ripple-container"><span class="mdl-ripple is-animating" style="width: 92.5097px; height: 92.5097px; transform: translate(-50%, -50%) translate(21px, 21px);"></span></span></a>
+          </div>
+        <div class="demo-container mdl-grid">
+          <div class="mdl-cell mdl-cell--2-col mdl-cell--hide-tablet mdl-cell--hide-phone"></div>
+          <div class="demo-content mdl-color--white mdl-shadow--4dp content mdl-color-text--grey-800 mdl-cell mdl-cell--8-col">
+            <div class="demo-crumbs mdl-color-text--grey-500">
+              Robótica &gt; Clases &gt; Clase1 &gt; Introducción al curso
+            </div>
+            <h3>Introducción al curso</h3>
+              <p>
+                Resumen:
+                <ol>
+                  <li>Estudio de las cargas</li>
+                  <li>Tipos de motor y sus partes</li>
+                  <li>Tipos de programación</li>
+                  <li>Sistemas de lazo abierto</li>
+                  <li>Sistemas de lazo cerrado</li>
+                  <li>Motor paso a paso</li>
+                  <li>Servomotor</li>
+                  <li>Microcontrolador de un robot</li>
+                </ol>
+              </p>
+              <h4>1. Estudio de las cargas</h4>
+              <p>
+                <b>Resistor, condensador, inductor</b><br>
+                <img src="../images/clase1/clase1-1.png" class="cimage"><br><br>
+                Control inductivo:
+                <ul>
+                  <li>Control Potencial
+                    <ul>
+                      <li>ON-OFF</li>
+                      <li>PWM</li>
+                    </ul>
+                  </li>
+                  <li>Control Señal
+                    <ul>
+                      <li>Microcontrolador</li>
+                      <li>Microprocesador</li>
+                    </ul>
+                  </li>
+                </ul>
+              </p>
+              <p>
+              <div class="mdl-grid">
+
+                <div class="mdl-cell mdl-cell--6-col">
+                  <b>a.Sistema NO Lineal</b><br>
+                  <img src="../images/clase1/clase1-2.png" class="cimage">
+                </div>
+
+                <div class="mdl-cell mdl-cell--6-col">
+                  <b>b.Sistema Lineal</b><br>
+                  <img src="../images/clase1/clase1-3.png" class="cimage">
+                </div>
+
+                </div>
+              </p>
+
+              <p>
+              <div class="mdl-grid">
+
+                <div class="mdl-cell mdl-cell--6-col">
+                  <b>a.Corriente Alterna (Se dispara)</b><br>
+                  <img src="../images/clase1/clase1-4.png" class="cimage">
+                </div>
+
+                <div class="mdl-cell mdl-cell--6-col">
+                  <b>b.Corriente Continua</b><br>
+                  <img src="../images/clase1/clase1-5.png" class="cimage">
+                </div>
+
+                </div>
+              </p>
+
+              <p>
+              <div class="mdl-grid">
+
+                <div class="mdl-cell mdl-cell--6-col">
+                  <b>a.Frecuencia: Desfasamiento de la señal</b><br>
+                  <img src="../images/clase1/clase1-6.png" class="cimage">
+                </div>
+
+                <div class="mdl-cell mdl-cell--6-col">
+                  <b>b.Frecuencia: Continua</b><br>
+                  <img src="../images/clase1/clase1-7.png" class="cimage">
+                </div>
+
+                </div>
+              </p>
+
+              <p>
+                <h4>2. Motor</h4>     
+                El motor eléctrico es un dispositivo que transforma la energía eléctrica en energía mecánica por medio de la acción de los campos magnéticos generados en sus bobinas. Son máquinas eléctricas rotatorias compuestas por un estátor y un rotor.           
+              </p> 
+              
+              <p>
+                <b>Partes de un motor</b><br>
+                <img src="../images/clase1/motor.jpg" class="cimage" style="width:350px;">
+              </p>
+              <p><b>Tipos:</b></p>
+              <p><b>Motor AC: </b>(Asíncrono) Sin bobinas<br>
+             <b>Motor DC: </b>(Síncrono) Con bobinas</p>
+
+              <p>Corriente total = Corriente arranque + Corriente operación</p>
+              <p>Corriente arranque = n x Corriente operación</p>
+              <p>Donde : n = 5,6,7,8,9,10.</p>
+
+              <p>
+                <h4>3. Tipos de programación</h4> 
+                <ul>
+                  <li>Bajo Nivel
+                    <ul>
+                      <li>Assembler (Binaria)</li>
+                    </ul>
+                  </li>
+                  <li>Alto Nivel</li>
+                    <ul>
+                      <li>Arduino</li>
+                      <li>Matlab</li>
+                      <li>C</li>
+                      <li>C++</li>
+                      <li>PCC</li>
+                      <li>Pic Basic</li>
+                    </ul>
+                </ul>
+              </p>
+              <p>
+                <h4>4. Sistema de lazo abierto</h4> 
+                Aquellos en los que la variable de salida (variable controlada) no tiene efecto sobre la acción de control (variable de control).
+                <ul>
+                      <li>Sistema de lazo abierto con sensor</li>
+                      <li>Sistema de lazo abierto sin sensor</li>
+                </ul>
+              </p>
+              <p>
+                <h4>5. Sistema de lazo cerrado</h4> 
+                Aquellos en los que la señal de salida del sistema (variable controlada) tiene efecto directo sobre la acción de control (variable de control).
+                <ul>
+                      <li>Sistema de lazo cerrado con sensor</li>
+                      <li>Sistema de lazo cerrado sin sensor</li>
+                </ul>
+              </p>
+
+              <p>
+                <h4>6. Motor paso a paso</h4>
+                Los motores paso a paso son ideales para la construcción de mecanismos en donde se requieren movimientos muy precisos.<br>
+
+                La característica principal de estos motores es el hecho de poder moverlos un paso a la vez por cada pulso que se le aplique. Este paso puede variar desde 90° hasta pequeños movimientos de tan solo 1.8°, es decir, que se necesitarán 4 pasos en el primer caso (90°) y 200 para el segundo caso (1.8°), para completar un giro completo de 360°.
+                <ul>
+                  <li>Unipolares (5 - 6 cables)</li>
+                  <li>Bipolares (4 cables)</li>
+                </ul>
+              </p>
+
+              <p>
+                <b>Motor paso a paso unipolar</b><br>
+                <img src="../images/clase1/motorpp.gif" class="cimage" style="width:500px">
+              </p>
+
+              <p>
+                <b>Motor paso a paso bipolar</b><br>
+                <img src="../images/clase1/motorpp2.jpg" class="cimage" style="width:200px">
+              </p>
+
+              <p>
+                <h4>7. Servomotor</h4>
+                Un servomotor es un motor eléctrico al que podemos controlar tanto su velocidad como la posición del eje que gira (también llamada dirección del eje). <br>
+
+                Los servomotores no giran su eje 360º (aunque ahora hay algunos que si lo permiten), como los motores normales, solo giran 180º hacia la izquierda o hacia la derecha (ida y retorno).<br><br>
+
+                <b>Servomotor mínimo</b><br>
+                <img src="../images/clase1/servomotor.jpg" class="cimage" style="width:200px"><br><br>
+
+                Gracias a esto, con los servomotores podemos crear toda clase movimientos de una forma controlada, por ejemplo en robotica para el control del movimiento del brazo de un robot o en los sistemas de radio control.<br>
+
+                La mayoría de los servomotores que se utilizan son de corriente continua, pero también existen en corriente alterna.<br>
+              </p>
+
+              <p>
+                <h4>8. Microcontrolador de un Robot</h4> 
+                <ul>
+                  <li>Señales Digitales
+                    <ul>
+                      <li>Logica 1 - 0</li>
+                      <li>VDigital</li>
+                        <ul>
+                        <li>5v / 3.3v</li>
+                        <li>0v / 0v</li>
+                      </ul>
+                    </ul>
+                  </li>
+                  <li>1bit</li>
+                </ul>
+              </p>
+
+              <p>
+                <b>Nota:</b><br>
+                  1byte = 8bits<br>
+                  Word = 2byte = 16bits<br>
+                  2words = 4byte = 32bits<br>
+              </p>
+
+          </div>
+        </div>
+        <footer class="demo-footer mdl-mini-footer">
+          <div class="mdl-mini-footer--left-section">
+            Introducción a la Robótica - Ingeniería de Sistemas - UNTELS
+          </div>
+        </footer>
+      </main>
+    </div>
+    <a href="" id="view-source" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-color--accent mdl-color-text--accent-contrast">Ver diapositivas</a>
+    <script src="../../material.min.js"></script>
+  </body>
+</html>
